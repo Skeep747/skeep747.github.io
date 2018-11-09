@@ -1,0 +1,88 @@
+body {
+	background-color: #f6f6f6;
+}
+
+button:focus {
+    outline: none;
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1010px;
+	height: 503px;
+	margin: -251px 0 0 -505px;
+	border: 1px solid #d7d7d7;
+	background-color: #ffffff;
+}
+
+.item {
+	display: inline-block;
+	width: 376px;
+	height: 375px;
+	margin-top: 64px;
+	margin-bottom: 64px;
+	margin-left: 48px;
+	margin-right: 102px;
+}
+
+.description {
+	display: inline-block;
+	width: 393px;
+	margin-top: 94px;
+	margin-bottom: 81px;
+	position: absolute;
+}
+
+.item-title {
+	width: 178px;
+	height: 22px;
+	margin-bottom: 30px;
+	color: #2f2f2f;
+	font-family: "Arial - Bold MT";
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.item-description {
+	width: 393px;
+	height: 50px;
+	margin-bottom: 55px;
+	color: #2f2f2f;
+	font-family: "Arial MT";
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.item-price-name {
+	width: 35px;
+	height: 14px;
+	margin-bottom: 23px;
+	color: #2f2f2f;
+	font-family: "Arial MT";
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.item-price {
+	width: 103px;
+	height: 28px;
+	margin-bottom: 56px;
+	color: #2f2f2f;
+	font-family: "Arial MT";
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.button {
+    width: 252px;
+    height: 50px;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 19px;
+    font-weight: 400;
+    background-color: #ec744a;
+    text-align: center;
+    border: none;
+}

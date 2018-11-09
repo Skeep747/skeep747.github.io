@@ -1,0 +1,59 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-family: "Proxima Nova";
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 125px;
+}
+
+.section-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-content {
+  text-align: center;
+}
+
+.section-content__img {
+  background-color: white;
+  min-width: 263px;
+  min-height: 210px;
+  margin-bottom: 25px;
+}
+
+.section-content__desc {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.section-content__price {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.section-content__button {
+  color: #23bac1;
+  font-family: "Proxima Nova";
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 101px;
+  background-color: transparent;
+  border: 1px solid #23bac1;
+  padding: 23px 75px;
+}

@@ -1,0 +1,24 @@
+.title {
+	margin-top: 70px;
+	font-family: Tahoma;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.elem {
+	text-align: center;
+}
+
+.elem-img {
+	min-height: 77px;
+	margin-top: 82px;
+	margin-bottom: 14px;
+}
+
+.elem-text {
+	font-family: Tahoma;
+	font-size: 16px;
+	font-weight: 700;
+}
