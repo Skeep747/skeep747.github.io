@@ -1,0 +1,9 @@
+body {
+  background-color: #E0E0E0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

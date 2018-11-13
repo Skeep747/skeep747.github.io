@@ -14,6 +14,10 @@ h1 {
   margin: 0;
 }
 
+input:focus, button:focus {
+  outline: none;
+}
+
 .button {
   font-size: 14px;
   font-weight: 500;
@@ -30,6 +34,12 @@ h1 {
 }
 
 .button img {
+  vertical-align: middle;
+}
+
+.button-big {
+  padding-top: 20px;
+  padding-bottom: 20px;
   vertical-align: middle;
 }
 
@@ -73,6 +83,7 @@ h1 {
   padding-top: 65px;
   padding-bottom: 60px;
   background: #373737 url(../images/Lesson12/main-bg.jpg) center no-repeat;
+  background-size: cover;
   color: #ffffff;
   z-index: 1;
 }
@@ -123,6 +134,48 @@ h1 {
 }
 
 .main-text__subtitle {
+  margin-bottom: 27px;
   font-size: 28px;
+  font-weight: 300;
+}
+
+.main-text__form {
+  padding: 30px 27px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  padding-right: 87px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.form-title__important {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-input {
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 4px;
+  border: none;
+  vertical-align: middle;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.form-small {
+  font-size: 14px;
   font-weight: 300;
 }
