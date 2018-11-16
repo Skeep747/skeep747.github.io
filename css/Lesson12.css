@@ -179,3 +179,131 @@ input:focus, button:focus {
   font-size: 14px;
   font-weight: 300;
 }
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 42px;
+  opacity: 0.7;
+  color: #373737;
+  padding-left: 18px;
+}
+
+:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 42px;
+  opacity: 0.7;
+  color: #373737;
+  padding-left: 18px;
+}
+
+::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 42px;
+  opacity: 0.7;
+  color: #373737;
+  padding-left: 18px;
+}
+
+::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 42px;
+  opacity: 0.7;
+  color: #373737;
+  padding-left: 18px;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay .popup {
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  width: 752px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.overlay .popup-close {
+  position: absolute;
+  right: -20px;
+  top: -30px;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.overlay .popup-title {
+  display: block;
+  width: 100%;
+  min-height: 71px;
+  margin: 0;
+  background-color: #ff9d00;
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 71px;
+}
+
+.overlay .popup-form {
+  background: url(../images/Lesson12/form-bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 35px 88px 50px 88px;
+  color: white;
+}
+
+.overlay .popup-form-header {
+  padding: 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+
+.overlay .popup-form-header span {
+  font-size: 24px;
+}
+
+.overlay .popup-form__label {
+  display: block;
+  margin-top: 23px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.overlay .popup-form__input {
+  width: 365px;
+  height: 56px;
+  margin-top: 17px;
+}
+
+.overlay .popup-form__btn {
+  width: 180px;
+  height: 56px;
+  margin-left: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.overlay .popup-form__note {
+  margin-top: 9px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+}

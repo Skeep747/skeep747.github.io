@@ -74,6 +74,51 @@
             </div>
         </div>
     </section>
-</body>
 
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-title">Форма обратной связи</div>
+            <!-- /.popup-title -->
+            <div class="popup-close">&times;</div>
+            <!-- /.poup-close -->
+            <div class="popup-form">
+                <form action="#" class="main-form">
+                    <div class="popup-form-header">
+                        Получите индивидуальное предложение
+                        <span>на производство и поставку изделий</span>
+                        <label for="phone" class="popup-form__label">
+                            Введите ваш номер телефона:
+                        </label>
+                        <input type="tel" class="popup-form__input" name="phone" required placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+                        <button class="button popup-form__btn">
+                            Оставить заявку!
+                        </button>
+                        <div class="popup-form__note">
+                            *Минимальный заказ 500шт
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.popup-form -->
+        </div>
+        <!-- /.popup -->
+    </div>
+    <!-- /.ovarlay -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.slim.min.js"><\/script>')</script>
+    <script>
+    
+        $(document).ready(function(){
+
+            $('.header-contacts__button').on("click", function(){
+                $('.overlay').show();
+            });
+            
+            $('.popup-close').on("click", function(){
+                $('.overlay').hide();
+            });
+        });
+
+    </script>
+</body>
 </html>
