@@ -329,6 +329,38 @@ input:focus, button:focus {
   .hidden-mobile {
     display: none;
   }
+  ::-webkit-input-placeholder {
+    opacity: 0.7;
+    color: #373737;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0;
+    text-align: center;
+  }
+  :-ms-input-placeholder {
+    opacity: 0.7;
+    color: #373737;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0;
+    text-align: center;
+  }
+  ::-ms-input-placeholder {
+    opacity: 0.7;
+    color: #373737;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0;
+    text-align: center;
+  }
+  ::placeholder {
+    opacity: 0.7;
+    color: #373737;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0;
+    text-align: center;
+  }
   .header {
     background-color: #f4f4f4;
   }
