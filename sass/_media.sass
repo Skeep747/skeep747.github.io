@@ -1,0 +1,57 @@
+@media (max-width: 576px)
+    body
+        width: 320px
+        margin: auto
+    .hidden-mobile
+        display: none
+    .header
+        background-color: #f4f4f4
+        &-logo
+            background: $active-color url(../images/Lesson17/mobile-logo.png) center no-repeat
+            width: 35px
+            height: 35px
+            border-radius: 4px
+        &-contacts
+            &__phone
+                font-size: 14px
+                &s
+                    flex-direction: column
+            &__button
+                padding: 9px
+                margin-left: 14px
+    .main
+        text-align: center
+        padding-top: 50px
+        &-text
+            &__title
+                color: $active-color
+                font-size: 22px
+                font-weight: 700
+                line-height: 24px
+                margin-bottom: 10px
+            &__subtitle
+                font-size: 18px
+                font-weight: 400
+                margin-bottom: 40px
+            &__form
+                background-color: transparent
+                padding: 0
+    .form
+        display: block
+        &-title
+            padding-right: 0
+            font-size: 15px
+            font-weight: 300
+            line-height: 18px
+            &__important
+                display: block
+                font-weight: 700
+                margin-top: 10px
+        &-input
+            display: block
+            padding: 17px 61px
+            font-size: 13px
+            font-weight: 300
+            margin-bottom: 13px
+            margin-right: 0
+
