@@ -1,14 +1,36 @@
+.section
+    &-title
+        font-size: 27px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 39px
+        &::after
+            margin-top: 12px
+            content: ''
+            display: block
+            height: 6px
+            background: url(../images/lesson18/line.png) center no-repeat
 .button
     font-size: 14px
     font-weight: 500
     background-color: $active-color
     color: $text-color-light
-    border: none
+    border: 1px solid transparent
     padding: 13px 22px
     border-radius: 5px
     &:hover
         background-color: lighten($active-color, 6)
         cursor: pointer
+    &-o
+        background-color: transparent
+        color: $text-color-dark
+        border: 1px solid rgba(#373737, 0.5)
+        &:hover
+            background-color: lighten($active-color, 6)
+            color: $text-color-light
+            border: 1px solid transparent
+            cursor: pointer
     img
         vertical-align: middle
     &-big
