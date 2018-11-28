@@ -120,6 +120,44 @@ input:focus, button:focus {
   margin-left: 27px;
 }
 
+@-webkit-keyframes myBox {
+  from {
+    opacity: 0;
+    margin-bottom: -100px;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes myBox {
+  from {
+    opacity: 0;
+    margin-bottom: -100px;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+.animate {
+  opacity: 0;
+  -webkit-animation-name: myBox;
+          animation-name: myBox;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .main {
   position: relative;
   padding-top: 65px;

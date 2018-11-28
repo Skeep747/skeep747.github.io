@@ -24,3 +24,17 @@
             margin-left: 13px
         &__button
             margin-left: 27px
+@keyframes myBox
+    from
+        opacity: 0
+        margin-bottom: -100px
+        transform: rotateY(90deg)
+    to
+        opacity: 1
+        margin-bottom: 0      
+.animate
+    opacity: 0
+    animation-name: myBox
+    animation-delay: 0.4s
+    animation-duration: 1s
+    animation-fill-mode: forwards
