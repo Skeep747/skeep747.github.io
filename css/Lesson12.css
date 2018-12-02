@@ -106,6 +106,23 @@ input:focus, button:focus {
   background: #ff9d00 url(../images/Lesson20/arrow-right-active.png) center no-repeat;
 }
 
+.dark-bg {
+  position: relative;
+  z-index: 1;
+}
+
+.dark-bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
 .header {
   padding: 15px 0;
 }
@@ -193,25 +210,11 @@ input:focus, button:focus {
 }
 
 .main {
-  position: relative;
   padding-top: 65px;
   padding-bottom: 60px;
   background: #373737 url(../images/Lesson12/main-bg.jpg) center no-repeat;
   background-size: cover;
   color: #ffffff;
-  z-index: 1;
-}
-
-.main::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0;
 }
 
 .main-img {
@@ -657,6 +660,8 @@ input:focus, button:focus {
   padding: 20px 185px 16px 58px;
   color: #ffffff;
   background-color: #ff9d00;
+  max-width: 379px;
+  width: 100%;
   font-size: 28px;
   font-weight: 400;
   margin-bottom: 28px;
@@ -666,6 +671,9 @@ input:focus, button:focus {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  text-align: justify;
+  max-width: 379px;
+  width: 100%;
 }
 
 .feedback {
@@ -676,4 +684,42 @@ input:focus, button:focus {
 
 .feedback-slider img {
   margin: 0 auto;
+}
+
+.offer {
+  padding-top: 64px;
+  padding-bottom: 69px;
+  color: #ffffff;
+  background: gray url(../images/Lesson21/offer-bg.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.offer-title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.offer-title_small {
+  font-size: 26px;
+  display: block;
+  margin-top: 11px;
+}
+
+.offer-form__label {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.offer-form__input {
+  display: block;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+.offer-form__button {
+  margin-bottom: 9px;
 }

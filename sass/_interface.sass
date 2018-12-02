@@ -57,3 +57,16 @@
         background: #fff url(../images/Lesson20/arrow-right.png) center no-repeat
         &:hover
             background: $active-color url(../images/Lesson20/arrow-right-active.png) center no-repeat
+.dark-bg
+    position: relative
+    z-index: 1
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,0.6)
+        z-index: -1
