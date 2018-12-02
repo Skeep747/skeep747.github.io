@@ -72,6 +72,40 @@ input:focus, button:focus {
   vertical-align: middle;
 }
 
+.slider-arrow {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 22px;
+}
+
+.slider-arrow_prod {
+  border: solid 1px #ff9d00;
+}
+
+.slider-arrow:hover {
+  cursor: pointer;
+}
+
+.slider-arrow_left {
+  left: 0;
+  background: #fff url(../images/Lesson20/arrow-left.png) center no-repeat;
+}
+
+.slider-arrow_left:hover {
+  background: #ff9d00 url(../images/Lesson20/arrow-left-active.png) center no-repeat;
+}
+
+.slider-arrow_right {
+  right: 0;
+  background: #fff url(../images/Lesson20/arrow-right.png) center no-repeat;
+}
+
+.slider-arrow_right:hover {
+  background: #ff9d00 url(../images/Lesson20/arrow-right-active.png) center no-repeat;
+}
+
 .header {
   padding: 15px 0;
 }
@@ -595,4 +629,51 @@ input:focus, button:focus {
 .wraper {
   max-width: 940px;
   margin: auto;
+}
+
+.production {
+  padding-top: 87px;
+  padding-bottom: 95px;
+}
+
+.production-slider_top {
+  margin: 13px;
+  height: 377px;
+  overflow: hidden;
+}
+
+.production-slider_bottom {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 78px;
+  overflow: hidden;
+}
+
+.production-slider_bottom img {
+  margin: 0 4px;
+}
+
+.production-text__title {
+  padding: 20px 185px 16px 58px;
+  color: #ffffff;
+  background-color: #ff9d00;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.production-text__descr {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.feedback {
+  padding-top: 55px;
+  padding-bottom: 66px;
+  background-color: #f4f4f4;
+}
+
+.feedback-slider img {
+  margin: 0 auto;
 }

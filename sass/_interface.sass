@@ -37,3 +37,23 @@
         padding-top: 20px
         padding-bottom: 20px
         vertical-align: middle
+.slider-arrow
+    position: absolute
+    top: 0
+    z-index: 99
+    height: 100%
+    width: 22px
+    &_prod
+        border: solid 1px $active-color
+    &:hover
+        cursor: pointer
+    &_left
+        left: 0
+        background: #fff url(../images/Lesson20/arrow-left.png) center no-repeat
+        &:hover
+            background: $active-color url(../images/Lesson20/arrow-left-active.png) center no-repeat
+    &_right
+        right: 0
+        background: #fff url(../images/Lesson20/arrow-right.png) center no-repeat
+        &:hover
+            background: $active-color url(../images/Lesson20/arrow-right-active.png) center no-repeat
