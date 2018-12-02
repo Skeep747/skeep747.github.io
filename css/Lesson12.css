@@ -604,6 +604,7 @@ input:focus, button:focus {
   }
   .header {
     background-color: #f4f4f4;
+    padding: 14px 0;
   }
   .header-logo {
     background: #ff9d00 url(../images/Lesson17/mobile-logo.png) center no-repeat;
