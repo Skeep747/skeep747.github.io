@@ -75,7 +75,7 @@ input:focus, button:focus {
 .slider-arrow {
   position: absolute;
   top: 0;
-  z-index: 99;
+  z-index: 1;
   height: 100%;
   width: 22px;
 }
@@ -123,8 +123,145 @@ input:focus, button:focus {
   z-index: -1;
 }
 
+.menu {
+  position: fixed;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #373737;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.menu a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu__separator {
+  width: 1px;
+  height: 32px;
+  opacity: 0.2;
+  background-color: #cfcfd0;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
+.nav {
+  background-color: purple;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav-menu {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 20px;
+  top: 18px;
+  z-index: 3;
+}
+
+.nav-menu span, .nav-menu span:before, .nav-menu span:after {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background-color: #333333;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.nav-menu span:before {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  content: '';
+  margin-top: -6px;
+}
+
+.nav-menu span:after {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  content: '';
+  margin-top: 4px;
+}
+
+.nav-menu_active span {
+  background-color: transparent;
+}
+
+.nav-menu_active span:before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: 0;
+}
+
+.nav-menu_active span:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-top: 0;
+}
+
+.nav_active {
+  left: 0;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav ul a {
+  display: block;
+  width: 100vw;
+  line-height: 4;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.nav ul a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .header {
-  padding: 15px 0;
+  padding: 60px 0 14px 0;
 }
 
 .header-logo {
@@ -531,6 +668,12 @@ input:focus, button:focus {
   }
 }
 
+@media (min-width: 576px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
 .features {
   background-color: #f4f4f4;
   padding-top: 49px;
@@ -613,25 +756,42 @@ input:focus, button:focus {
   margin-right: 12px;
 }
 
-.customers-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 212px;
-  height: 130px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+.offer {
+  padding-top: 64px;
+  padding-bottom: 69px;
+  color: #ffffff;
+  background: gray url(../images/Lesson21/offer-bg.jpg) center no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
-.wraper {
-  max-width: 940px;
+.offer-title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.offer-title_small {
+  font-size: 26px;
+  display: block;
+  margin-top: 11px;
+}
+
+.offer-form__label {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.offer-form__input {
+  display: block;
   margin: auto;
+  margin-bottom: 12px;
+}
+
+.offer-form__button {
+  margin-bottom: 9px;
 }
 
 .production {
@@ -686,40 +846,23 @@ input:focus, button:focus {
   margin: 0 auto;
 }
 
-.offer {
-  padding-top: 64px;
-  padding-bottom: 69px;
-  color: #ffffff;
-  background: gray url(../images/Lesson21/offer-bg.jpg) center no-repeat;
-  background-size: cover;
-  text-align: center;
+.customers-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 212px;
+  height: 130px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-.offer-title {
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 32px;
-}
-
-.offer-title_small {
-  font-size: 26px;
-  display: block;
-  margin-top: 11px;
-}
-
-.offer-form__label {
-  display: block;
-  margin-bottom: 17px;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.offer-form__input {
-  display: block;
+.wraper {
+  max-width: 940px;
   margin: auto;
-  margin-bottom: 12px;
-}
-
-.offer-form__button {
-  margin-bottom: 9px;
 }

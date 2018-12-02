@@ -15,7 +15,51 @@
 </head>
 
 <body>
-    <header class="header">
+    <div class="menu hidden-mobile">
+        <div class="menu-link">
+            <a href="#header">В начало</a>
+        </div>
+        <div class="menu__separator"></div>
+        <div class="menu-link">
+            <a href="#features">Преимущества</a>
+        </div>
+        <div class="menu__separator"></div>
+        <div class="menu-link">
+            <a href="#products">Продукция</a>
+        </div>
+        <div class="menu__separator"></div>
+        <div class="menu-link">
+            <a href="#offer">Индивидуальное предложение</a>
+        </div>
+        <div class="menu__separator"></div>
+        <div class="menu-link">
+            <a href="#production">Производство</a>
+        </div>
+        <div class="menu__separator"></div>
+        <div class="menu-link">
+            <a href="#feedback">Отзывы</a>
+        </div>
+        <div class="menu__separator"></div>
+        <div class="menu-link">
+            <a href="#customers">Клиенты</a>
+        </div>
+    </div>
+    <a class="nav-menu hidden-desktop" href="#menu">
+        <span></span>
+    </a>
+    <div class="nav">
+        <ul>
+            <li><a href="#header">В начало</a></li>
+            <li><a href="#features">Преимущества</a></li>
+            <li><a href="#products">Продукция</a></li>
+            <li><a href="#offer">Индивидуальное предложение</a></li>
+            <li><a href="#production">Производство</a></li>
+            <li><a href="#feedback">Отзывы</a></li>
+            <li><a href="#customers">Клиенты</a></li>
+        </ul>
+    </div>
+
+    <header class="header" id="header">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-3 col-md-4">
@@ -79,7 +123,7 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
 
             <div class="features-numbers">
@@ -183,7 +227,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
             <h2 class="section-title wow pulse">наша Продукция</h2>
 
@@ -235,7 +279,7 @@
         </div>
     </section>
 
-    <section class="offer dark-bg">
+    <section class="offer dark-bg" id="offer">
         <div class="container">
             <h2 class="offer-title">Получите индивидуальное предложение
                 <span class="offer-title_small">на производство и поставку изделий</span>
@@ -251,7 +295,7 @@
         </div>
     </section>
 
-    <section class="production">
+    <section class="production" id="production">
         <div class="container">
             <div class="row">
                 <div class="col-7">
@@ -300,7 +344,7 @@
     </section>
     <!-- /.production -->
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
         <div class="container">
             <h1 class="section-title">
                 Отзывы о сотрудничестве
@@ -319,7 +363,7 @@
     </section>
     <!-- /.feedback -->
 
-    <section class="customers">
+    <section class="customers" id="customers">
         <div class="container">
             <h2 class="section-title wow pulse">Наши клиенты</h2>
             <div class="wraper">
@@ -417,6 +461,20 @@
     <script>
 
         $(document).ready(function () {
+            var nav_menu = $('.nav-menu');
+            var nav = $('.nav');
+            var nav_link = $('.nav a');
+
+            nav_menu.click(function () {
+                nav_menu.toggleClass('nav-menu_active');
+                nav.toggleClass('nav_active');
+            });
+
+            nav_link.click(function () {
+                nav_menu.toggleClass('nav-menu_active');
+                nav.toggleClass('nav_active');
+            });
+
             if ($(window).width() > 575) {
                 $('.header-contacts__button').on("click", function () {
                     $('.overlay').show();
