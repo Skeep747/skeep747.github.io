@@ -867,3 +867,48 @@ input:focus, button:focus {
   max-width: 940px;
   margin: auto;
 }
+
+.contacts {
+  position: relative;
+}
+
+.contacts-block {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  background-color: #ffffff;
+  padding: 33px 34px 39px 60px;
+}
+
+.contacts-block__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.contacts-block__text {
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 88px;
+  background-color: #1b1b1b;
+}
+
+.footer-text {
+  font-size: 13px;
+  font-weight: 300;
+  opacity: 0.5;
+  color: #ffffff;
+}
