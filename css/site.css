@@ -1,9 +1,15 @@
 body {
   background-color: #E0E0E0;
+  font-size: 20px;
 }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.online {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
